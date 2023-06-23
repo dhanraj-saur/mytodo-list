@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" id="theme">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="nav">
+        <h1 class="heads">Todo List</h1>
+        <label>
+            <input type="checkbox" class="checkbox-btn" id="checkbox-btn" onclick="changeTheme()" checked>
+            <div class="theme_name_icon">
+                <img src="sunny.png" id="theme_image" />
+                <!-- <img src="sunny.png" id="sunny" style="display:none" /> -->
+            </div>
+        </label>
+    </div>
+
+    <div class="container">
+        <div class="todo_box">
+            <div class="add_todo_box">
+                <div>
+                    <input type="text" id="task" placeholder="Todo..."><br>
+                    <button id="btn" class="btn">Add Todo</button>
+                </div>
+
+            </div>
+            <div class="todo_list">
+                <div id="store"> </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
